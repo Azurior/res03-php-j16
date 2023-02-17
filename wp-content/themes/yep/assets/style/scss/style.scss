@@ -1,0 +1,79 @@
+@import'reset';
+
+.sr-only{
+    display:none;
+}
+
+body{
+
+    display: grid;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+    & > header{
+
+        height: 20vh;
+        display: grid;
+        grid-template-columns: 0.1fr 0.9fr;
+        background-color: #074b6b;
+        color: white;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+            & > figure{
+
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                height: 100%;
+
+                    & > img{
+                        margin-left: 1.5rem;
+                        width: 70%;
+                    }
+                }
+
+            & > nav{
+
+                align-self: center;
+                width: 40vw;
+                display: flex;
+
+                & > ul{
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    & > li{
+
+                        padding-right: 3rem;
+
+                        & > a{
+
+                            text-transform: uppercase;
+                            font-size: 1.2rem;
+                        }
+
+                        & > a:hover{
+
+                            text-decoration: underline red;
+                            text-decoration-thickness: 3px;
+                            text-underline-offset: 1em;
+                        }
+
+                        & > a:visited{
+                            color: white;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+
