@@ -61,6 +61,7 @@ body {
   display: grid;
   width: 100%;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 body > header {
   height: 20vh;
@@ -89,11 +90,12 @@ body > header > nav > ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 7rem;
+  margin-left: 5rem;
 }
 body > header > nav > ul > li {
   padding-left: 3rem;
   padding-right: 3rem;
+  width: 12vw;
 }
 body > header > nav > ul > li > a {
   text-transform: uppercase;
@@ -181,15 +183,36 @@ body > main > section:last-of-type > section > article {
   width: 25vw;
   height: 25vh;
 }
+body > main > section:last-of-type > section > article > p {
+  padding-left: 0.3rem;
+  padding-top: 6.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(201, 21, 120, 0.89);
+  font-weight: bold;
+}
+body > main > section:last-of-type > section > article > footer > p {
+  padding-left: 0.3rem;
+  color: white;
+  font-weight: bold;
+}
 body > main > section:last-of-type > section > article:first-of-type {
   background-image: url(./assets/img/santé.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+body > main > section:last-of-type > section > article:first-of-type > footer > p {
+  color: black;
+}
 body > main > section:last-of-type > section > article:nth-of-type(2) {
   background-image: url(./assets/img/librairie.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+body > main > section:last-of-type > section > article:nth-of-type(2) > p {
+  color: rgb(224, 3, 3);
+}
+body > main > section:last-of-type > section > article:nth-of-type(2) > footer > p {
+  color: black;
 }
 body > main > section:last-of-type > section > article:nth-of-type(3) {
   background-image: url(./assets/img/boulangerie.jpeg);
@@ -206,8 +229,44 @@ body > main > section:last-of-type > section > article:nth-of-type(5) {
   background-repeat: no-repeat;
   background-size: cover;
 }
+body > main > section:last-of-type > section > article:nth-of-type(5) > p {
+  color: azure;
+}
+body > main > section:last-of-type > section > article:nth-of-type(5) > footer > p {
+  color: #c4c5c5;
+}
 body > footer {
-  height: 50vh;
+  height: 70vh;
+  background-color: #0b6691;
+  color: whitesmoke;
+}
+body > footer > h2 {
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+body > footer > form {
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  width: 35vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+body > footer > form > fieldset {
+  display: grid;
+  grid-template-rows: auto;
+}
+body > footer > form > fieldset > label {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+body > footer > form > button {
+  margin-top: 0.5rem;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

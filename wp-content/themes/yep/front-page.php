@@ -70,7 +70,7 @@
                             </p>
                             <footer>
                                 <p>
-                                    Libraire l'écume des jours
+                                    Librairie l'écume des jours
                                 </p>
                             </footer>
                         </article>
@@ -80,7 +80,7 @@
                             </p>
                             <footer>
                                 <p>
-                                    Boulanger Galtier
+                                    Boulangerie Galtier
                                 </p>
                             </footer>
                         </article>
@@ -90,7 +90,7 @@
                             </p>
                             <footer>
                                 <p>
-                                    Mairie de Ploutruc
+                                    Le Mont-Saint-Michel
                                 </p>
                             </footer>
                         </article>
@@ -100,7 +100,7 @@
                             </p>
                             <footer>
                                 <p>
-                                    Festival des choses
+                                    Tomorrowland
                                 </p>
                             </footer>
                         </article>
@@ -108,7 +108,6 @@
                 </section>
         </main>
         <footer>
-            <section>
                 <h2>
                     Me contacter
                 </h2>
@@ -123,11 +122,10 @@
                     </fieldset>
                     <fieldset>
                         <label for="">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" cols="20" rows="10"></textarea>
                     </fieldset>
                     <button type="submit">Envoyer</button>
                 </form>
-            </section>
         </footer>
         <?php wp_footer(); ?>
     </body>
