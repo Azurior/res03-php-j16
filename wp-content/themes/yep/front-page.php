@@ -30,11 +30,10 @@
                 </nav>
         </header>
         <main>
-            <section>
-                <h2>
-                    Yepfolio
-                </h2>
                 <section>
+                    <h2>
+                        Yepfolio
+                    </h2>
                     <h3>
                         Développement web & mobile
                     </h3>
@@ -107,7 +106,6 @@
                         </article>
                     </section>
                 </section>
-            </section>
         </main>
         <footer>
             <section>
