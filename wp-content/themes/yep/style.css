@@ -100,14 +100,17 @@ body > header > nav > ul > li {
 body > header > nav > ul > li > a {
   text-transform: uppercase;
   font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
 }
 body > header > nav > ul > li > a:hover {
   text-decoration: underline rgba(201, 21, 120, 0.89);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 0.5em;
+  color: white;
 }
 body > header > nav > ul > li > a:visited {
-  color: white;
+  color: rgb(238, 238, 238);
 }
 body > main {
   min-height: 120vh;

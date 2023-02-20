@@ -1,3 +1,7 @@
+<?php  
+    $menuItems = getNavigationMenu();   
+    $data = getHomepageData();  
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -10,22 +14,26 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />  
-<title><?php echo get_bloginfo( 'name' );?></title>
+        <title><?php echo get_bloginfo( 'name' );?></title>
     </head>
     <body>
+        <?php var_dump($data); ?>
         <header>
                 <h1 class="sr-only">
                     Ceci est le titre de ma page.
                 </h1>
                 <figure>
-                        <img src="https://bit.ly/3lGEcNA" alt="licorne">
-                    </figure>
+                    <img src="https://bit.ly/3lGEcNA" alt="licorne">
+                </figure>
                 <nav>
                     <ul>
-                        <li><a>Accueil</a></li>
-                        <li><a>A propos</a></li>
-                        <li><a>Mes projets</a></li>
-                        <li><a>Me contacter</a></li>
+                        <?php foreach($menuItems as $item){?>
+                        <li>
+                            <a href="<?= $item->url ?>">
+                                <?= $item->title ?> 
+                            </a>
+                        </li>
+                        <?php }?>
                     </ul>
                 </nav>
         </header>
@@ -38,13 +46,11 @@
                         Développement web & mobile
                     </h3>
                 </section>
-                <section>
-                    <h3>
-                        Yepfolio en quelques mots
-                    </h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                <section id="about">  
+                    <h3><?= $data["a-propos"]["titre"] ?></h3>  
+                    <p>  
+                        <?= $data["a-propos"]["contenu"] ?>  
+                    </p>  
                 </section>
                 <section>
                     <h3>
