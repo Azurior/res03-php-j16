@@ -178,7 +178,7 @@ body{
                         & > p{
 
                             padding-left: 0.3rem;
-                            padding-top: 6.5rem;
+                            
                             padding-bottom: 0.5rem;
                             color:rgba(201, 21, 120, 0.89);
                             font-weight: bold;
@@ -194,10 +194,19 @@ body{
                         }
                     }
 
-                    & > article:first-of-type{
-                        background-image: url(./assets/img/santé.jpg);
-                        background-repeat: no-repeat;
-                        background-size: cover;
+                    & > article{
+                        // background-image: url(./assets/img/santé.jpg);
+                        // background-repeat: no-repeat;
+                        // background-size: cover;
+
+                        & > figure{
+
+
+                            & > img{
+                                width: 25vw;
+                                height: 25vh;
+                            }
+                        }
                             
                         & > footer{
                             & > p{
@@ -206,51 +215,59 @@ body{
                         }
                     }
 
-                    & > article:nth-of-type(2){
-                        background-image: url(./assets/img/librairie.jpg);
-                        background-repeat: no-repeat;
-                        background-size: cover;
+                    // & > article:nth-of-type(2){
+                    //     // background-image: url(./assets/img/librairie.jpg);
+                    //     // background-repeat: no-repeat;
+                    //     // background-size: cover;
 
-                        & > p{
-                            color:rgb(224, 3, 3);
-                        }
+                    //     & > p{
+                    //         color:rgb(224, 3, 3);
+                    //     }
 
-                        & > footer{
+                    //     & > footer{
 
-                            & > p{
-                                color: black;
-                            }
-                        }
-                    }
+                    //         & > p{
+                    //             color: black;
+                    //         }
+                    //     }
+                    // }
 
-                    & > article:nth-of-type(3){
-                        background-image: url(./assets/img/boulangerie.jpeg);
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                    }
+                    // & > article:nth-of-type(3){
+                    //     // background-image: url(./assets/img/boulangerie.jpeg);
+                    //     // background-repeat: no-repeat;
+                    //     // background-size: cover;
 
-                    & > article:nth-of-type(4){
-                        background-image: url(./assets/img/mont-saint-michel.jpg);
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                    }
+                    //     & > p{
+                    //         color: black;
+                    //     }
+                    // }
 
-                    & > article:nth-of-type(5){
-                        background-image: url(./assets/img/festival.jpg);
-                        background-repeat: no-repeat;
-                        background-size: cover;
+                    // & > article:nth-of-type(4){
+                    //     // background-image: url(./assets/img/mont-saint-michel.jpg);
+                    //     // background-repeat: no-repeat;
+                    //     // background-size: cover;
 
-                        & > p{
-                            color:azure;
-                        }
+                    //     & > p{
+                    //         color: green;
+                    //     }
+                    // }
 
-                        & > footer{
+                    // & > article:nth-of-type(5){
+                    //     // background-image: url(./assets/img/festival.jpg);
+                    //     // background-repeat: no-repeat;
+                    //     // background-size: cover;
 
-                            & >p{
-                                color: #c4c5c5;
-                            }
-                        }
-                    }
+                    //     & > p{
+                    //         color:azure;
+                    //     }
+
+                    //     & > footer{
+
+                    //         & >p{
+                    //             color: #c4c5c5;
+                    //         }
+                    //     }
+                    // }
                 }
             }
     }

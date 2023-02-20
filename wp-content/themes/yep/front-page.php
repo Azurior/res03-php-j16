@@ -17,7 +17,11 @@
         <title><?php echo get_bloginfo( 'name' );?></title>
     </head>
     <body>
-        <?php var_dump($data); ?>
+        <!-- <?php 
+        echo "<pre>";
+        var_dump($data);
+        echo "</pre>"; 
+        ?> -->
         <header>
                 <h1 class="sr-only">
                     Ceci est le titre de ma page.
@@ -60,56 +64,21 @@
                         <h4 class="sr-only">
                             Les articles
                         </h4>
+                        <?php foreach($data["projets"] as $projet){ ?>
                         <article>
                             <p>
-                                Application Santé
+                            <?= $projet["category"] ?>
                             </p>
                             <footer>
                                 <p>
-                                    Pharmacie de Maurepas
+                                <?php
+                                getHomepageData()->["post_title"];
+                                // var_dump($title);
+                                ?>
                                 </p>
                             </footer>
                         </article>
-                        <article>
-                            <p>
-                                Site E-Commerce 
-                            </p>
-                            <footer>
-                                <p>
-                                    Librairie l'écume des jours
-                                </p>
-                            </footer>
-                        </article>
-                        <article>
-                            <p>
-                                Site vitrine
-                            </p>
-                            <footer>
-                                <p>
-                                    Boulangerie Galtier
-                                </p>
-                            </footer>
-                        </article>
-                        <article>
-                            <p>
-                                Site Institutionnel
-                            </p>
-                            <footer>
-                                <p>
-                                    Le Mont-Saint-Michel
-                                </p>
-                            </footer>
-                        </article>
-                        <article>
-                            <p>
-                                Site promotionnel
-                            </p>
-                            <footer>
-                                <p>
-                                    Tomorrowland
-                                </p>
-                            </footer>
-                        </article>
+                        <?php } ?>
                     </section>
                 </section>
         </main>
